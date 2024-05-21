@@ -116,7 +116,9 @@ a:hover{
 
 #resultado img{
     width: 70%;
+    max-width: 300px;
 }
+
 /** Botones de redes */
 .btn-social{
     color: white;

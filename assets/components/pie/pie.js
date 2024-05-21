@@ -14,7 +14,7 @@ export class AppPie extends HTMLElement {
     <div style='text-align: center;'>
         <small class='pt-3'>Distribuido bajo la <a href='https://opensource.org/licenses/MIT' target='_blank'>licencia MIT</a> <br>
         <a href='https://www.linkedin.com/in/manuelcardenasthorlund/' target='_blank'>Manuel Cárdenas Thorlund</a>
-        <br><span style='font-size: 0.7em;'>Simon dice. v1.0</span></small>
+        <br><span style='font-size: 0.7em;'>Simon dice. v1.1</span></small>
     </div>
     `;
 

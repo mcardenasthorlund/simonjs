@@ -3,7 +3,7 @@ class Simon{
     colores = ["#75f6ff","#e20dbf","#59b93b","#f71313"];
     colores2 = ["#00acee", "#8b0c76", "#326822", "#c20d25"];
     sonidos = ["1.mp3", "2.mp3", "3.mp3", "4.mp3"];
-    audios = [];
+    
 
     temporizador;
     turno = 0; 
@@ -14,11 +14,18 @@ class Simon{
     secuencia = [];
     secuenciaUsuario = [];
 
+    // Sonidos
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    audios = [];
+    audioElements = [];
+
     constructor(){
         // Creamos los elementos de audio
         for (let i = 0; i < this.sonidos.length; i++) {
-            this.audios[i] = new Audio();
-            this.audios[i].src = "/assets/audios/" + this.sonidos[i];
+            this.audios[i] = new Audio("/assets/audios/" + this.sonidos[i]);
+            //this.audios[i].src = "/assets/audios/" + this.sonidos[i];
+            this.audioElements[i] = this.audioCtx.createMediaElementSource(this.audios[i]);
+            this.audioElements[i].connect(this.audioCtx.destination);
         }
     }
 
@@ -103,6 +110,10 @@ class Simon{
         this.esIniciado = false;
         clearTimeout(this.temporizador);
         
+        // Ponemos los colores de las cajas
+        for (let i = 0; i < this.secuencia.length; i++) {
+            document.getElementById('caja' + this.secuencia[i]).style.backgroundColor=this.colores2[this.secuencia[i]-1];
+        }
         if (esError) {
             document.getElementById('resultado').style.display= 'flex';
             document.getElementById('error').style.display= 'block';
