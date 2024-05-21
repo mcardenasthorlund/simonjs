@@ -6,10 +6,10 @@ export class AppPie extends HTMLElement {
     // TEMPLATE
     template = `
     <div style='display: block; text-align: center; margin-bottom: 30px;margin-top: 30px;'>
-        <a href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmetroapp.ideasypruebas2.es' class='btn-social btn-facebook' target='_blank'><i class='fa-brands fa-facebook'></i></a>
-        <a href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fmetroapp.ideasypruebas2.es' class='btn-social btn-twitter' target='_blank'><i class='fa-brands fa-x-twitter'></i></a>
-        <a href='https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmetroapp.ideasypruebas2.es' class='btn-social btn-linkedin' target='_blank'><i class='fa-brands fa-linkedin'></i></a>
-        <a href='https://api.whatsapp.com/send?text=https%3A%2F%2Fmetroapp.ideasypruebas2.es' class='btn-social btn-whatsapp' target='_blank'><i class='fa-brands fa-whatsapp'></i></a>
+        <a href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsimonapp.ideasypruebas2.es' class='btn-social btn-facebook' target='_blank'><i class='fa-brands fa-facebook'></i></a>
+        <a href='https://twitter.com/intent/tweet?url=https%3A%2F%2Fsimonapp.ideasypruebas2.es' class='btn-social btn-twitter' target='_blank'><i class='fa-brands fa-x-twitter'></i></a>
+        <a href='https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsimonapp.ideasypruebas2.es' class='btn-social btn-linkedin' target='_blank'><i class='fa-brands fa-linkedin'></i></a>
+        <a href='https://api.whatsapp.com/send?text=https%3A%2F%2Fsimonapp.ideasypruebas2.es' class='btn-social btn-whatsapp' target='_blank'><i class='fa-brands fa-whatsapp'></i></a>
     </div>
     <div style='text-align: center;'>
         <small class='pt-3'>Distribuido bajo la <a href='https://opensource.org/licenses/MIT' target='_blank'>licencia MIT</a> <br>
